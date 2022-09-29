@@ -10,9 +10,6 @@ class ColumbiaStudentResource:
 
     @staticmethod
     def _get_connection():
-        os.environ["DBUSER"] = "root"
-        os.environ["DBPW"] = "dbuserdbuser"
-        os.environ["DBHOST"] = "localhost"
         usr = os.environ.get("DBUSER")
         pw = os.environ.get("DBPW")
         h = os.environ.get("DBHOST")
